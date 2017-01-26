@@ -47,6 +47,7 @@ def encrypt(text, rot):
     newChar = ""
 
     for char in text:
+        char = str(char)
         newChar = rotate_character(char, rot)
         ciphered += newChar
 
